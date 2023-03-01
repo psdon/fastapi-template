@@ -1,0 +1,12 @@
+{
+    "full_name": "Paulo Sairel Don",
+    "email": "hello@paulodon.com",
+    "project_name": "FastAPI Template",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "project_short_description": "FastAPI template with things you need.",
+    "version": "0.1.0",
+    "api_prefix": "/a/api",
+    "_copy_without_render": [
+        "*.github"
+    ]
+}

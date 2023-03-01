@@ -1,0 +1,25 @@
+repos:
+-   repo: https://github.com/ambv/black
+    rev: 22.12.0
+    hooks:
+    - id: black
+      args: [--check]
+      exclude: ^alembic/
+-   repo: https://github.com/PyCQA/flake8
+    rev: 6.0.0
+    hooks:
+    - id: flake8
+      exclude: ^alembic/
+-   repo: https://github.com/PyCQA/isort
+    rev: 5.12.0
+    hooks:
+    - id: isort
+      args: [--check-only]
+      exclude: ^alembic/
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+    - id: detect-private-key
+      exclude: ^alembic/
+    - id: trailing-whitespace
+      exclude: ^alembic/
