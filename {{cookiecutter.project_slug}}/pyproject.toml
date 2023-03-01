@@ -3,10 +3,10 @@ requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 
 [tool.poetry]
-name = "FastAPI Template"
-version = "0.1.0"
-description = "FastAPI template with things you need."
-authors = ["Paulo Sairel Don <hello@paulodon.com>"]
+name = "{{ cookiecutter.project_name }}"
+version = "{{ cookiecutter.version }}"
+description = "{{ cookiecutter.project_short_description }}"
+authors = ["{{ cookiecutter.full_name }} <{{ cookiecutter.email }}>"]
 packages = [
     { include = "{{cookiecutter.project_slug}}", from = "." },
 ]
