@@ -88,4 +88,4 @@ asyncio_mode = "auto"
 [tool.poetry.scripts]
 server = "{{cookiecutter.project_slug}}.main:dev_server"
 test = "{{cookiecutter.project_slug}}.main:run_tests"
-db = "{{cookiecutter.project_slug}}.main:init_db"
+init_db = "{{cookiecutter.project_slug}}.main:init_db"
