@@ -36,4 +36,4 @@ RUN poetry install --no-dev --no-root  # respects
 WORKDIR /app
 COPY . .
 
-CMD ["uvicorn", "scripts.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "{{ cookiecutter.project_slug }}.api.app:app", "--host", "0.0.0.0", "--port", "8000"]
