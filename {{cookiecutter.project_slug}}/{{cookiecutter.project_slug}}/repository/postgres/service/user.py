@@ -1,5 +1,5 @@
-from {{cookiecutter.project_slug}}.api.schema import CurrentUser
 from sqlmodel import Session
+from {{cookiecutter.project_slug}}.api.schema import CurrentUser
 
 from ..model import User
 

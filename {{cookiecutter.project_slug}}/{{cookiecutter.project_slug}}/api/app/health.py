@@ -1,5 +1,5 @@
-from {{cookiecutter.project_slug}}.repository.redis.client import redis_client
 from {{cookiecutter.project_slug}}.repository.postgres.client import db_engine
+from {{cookiecutter.project_slug}}.repository.redis.client import redis_client
 
 
 async def ping_postgres():

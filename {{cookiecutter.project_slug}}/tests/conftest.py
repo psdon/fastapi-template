@@ -8,9 +8,12 @@ from sqlmodel import Session, SQLModel
 path = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, path + "/../")
 
-from {{cookiecutter.project_slug}}.repository.postgres.client import get_session, db_engine
 from mixer.backend.sqlalchemy import Mixer
 from {{cookiecutter.project_slug}}.api import app
+from {{cookiecutter.project_slug}}.repository.postgres.client import (
+    db_engine,
+    get_session,
+)
 
 
 @pytest.fixture(scope="module")

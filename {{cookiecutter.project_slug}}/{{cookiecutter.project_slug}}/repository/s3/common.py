@@ -1,7 +1,7 @@
 import pandas as pd
-from {{cookiecutter.project_slug}}.repository.boto3 import s3_client
-from {{cookiecutter.project_slug}}.config.env import settings
 from loguru import logger
+from {{cookiecutter.project_slug}}.config.env import settings
+from {{cookiecutter.project_slug}}.repository.boto3 import s3_client
 
 
 def read_csv_to_dataframe(key) -> pd.DataFrame:

@@ -1,14 +1,14 @@
 import sys
 
 from fastapi import FastAPI
-from {{cookiecutter.project_slug}}.api import router
-from {{cookiecutter.project_slug}}.api.app.cache import init_cache
-from {{cookiecutter.project_slug}}.api.app.sentry import init_sentry
-from {{cookiecutter.project_slug}}.config.env import Settings, settings
 from loguru import logger
 from sentry_sdk.integrations.asgi import SentryAsgiMiddleware
 from starlette.middleware.cors import CORSMiddleware
 from toolz import pipe
+from {{cookiecutter.project_slug}}.api import router
+from {{cookiecutter.project_slug}}.api.app.cache import init_cache
+from {{cookiecutter.project_slug}}.api.app.sentry import init_sentry
+from {{cookiecutter.project_slug}}.config.env import Settings, settings
 
 from .cache import CacheControlMiddleware
 from .root import router as root_router

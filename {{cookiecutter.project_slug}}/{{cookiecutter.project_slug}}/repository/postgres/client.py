@@ -1,6 +1,6 @@
-from {{cookiecutter.project_slug}}.config.env import settings
 from sqlmodel import Session, create_engine
 from sqlmodel.pool import StaticPool
+from {{cookiecutter.project_slug}}.config.env import settings
 
 # Set echo=True, if you want to print SQL Queries being executed. (i.e. Performance Debugging)
 # future=False is required to use pandas.read_sql

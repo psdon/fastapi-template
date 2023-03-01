@@ -1,5 +1,6 @@
 from fastapi import APIRouter, Depends
-from fastapi_cloudauth.cognito import CognitoClaims
+
+from ..repository.postgres.model import User
 from .app.auth import get_current_user
 
 router = APIRouter(prefix="/user")
@@ -12,6 +13,6 @@ def restricted():
 
 
 @router.get("/sample-get-email")
-def get_current_user_email(current_user: CognitoClaims = Depends(get_current_user)):
+def get_current_user_email(current_user: User = Depends(get_current_user)):
     # ID Token is valid, and getting user info
     return current_user.email

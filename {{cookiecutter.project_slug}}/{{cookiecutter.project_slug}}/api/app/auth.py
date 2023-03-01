@@ -1,10 +1,12 @@
 from fastapi import Depends, Security
 from fastapi_auth0 import Auth0
+from sqlmodel import Session
 from {{cookiecutter.project_slug}}.config.env import settings
 from {{cookiecutter.project_slug}}.repository.postgres.client import get_session
 from {{cookiecutter.project_slug}}.repository.postgres.model import User
-from {{cookiecutter.project_slug}}.repository.postgres.service.user import get_or_create
-from sqlmodel import Session
+from {{cookiecutter.project_slug}}.repository.postgres.service.user import (
+    get_or_create,
+)
 
 from ..schema.auth0_user import CurrentUser
 

@@ -6,11 +6,11 @@ from fastapi import Request, Response
 from fastapi_cache import FastAPICache
 from fastapi_cache.backends.redis import RedisBackend
 from fastapi_cache.decorator import cache
-from {{cookiecutter.project_slug}}.repository.redis.client import redis_client
-from {{cookiecutter.project_slug}}.config.constants import NON_CACHE_KEYS
-from {{cookiecutter.project_slug}}.config.env import Settings
 from loguru import logger
 from starlette.middleware.base import BaseHTTPMiddleware
+from {{cookiecutter.project_slug}}.config.constants import NON_CACHE_KEYS
+from {{cookiecutter.project_slug}}.config.env import Settings
+from {{cookiecutter.project_slug}}.repository.redis.client import redis_client
 
 
 class PatchFastAPICache(FastAPICache):

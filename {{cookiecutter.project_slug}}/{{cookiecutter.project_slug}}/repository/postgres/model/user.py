@@ -1,7 +1,7 @@
 from datetime import datetime
 
-from {{cookiecutter.project_slug}}.config.utils import datetime_utc
 from sqlmodel import Field
+from {{cookiecutter.project_slug}}.config.utils import datetime_utc
 
 from .base import BaseModel
 
