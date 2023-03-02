@@ -18,7 +18,7 @@ RUN apt update \
         curl \
         build-essential \
         libyaml-dev \
-        default-libmysqlclient-dev \
+        libpq-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Poetry - respects $POETRY_VERSION & $POETRY_HOME
