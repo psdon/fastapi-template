@@ -27,7 +27,7 @@ poetry run server
 
 Open Swagger Docs on the browser
 ```commandline
-http://localhost:8000/{{ cookiecutter.api_prefix }}/v1/docs
+http://localhost:8000{{ cookiecutter.api_prefix }}/v1/internal/docs
 ```
 
 
